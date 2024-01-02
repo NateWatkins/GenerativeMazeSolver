@@ -28,11 +28,10 @@ class Brain {
   
     
     void mutate() {
-      float mutationRate = 0.01;//chance that any vector in directions gets changed
+      float mutationRate = 0.01;
       for (int i =0; i< directions.length; i++) {
         float rand = random(1);
         if (rand < mutationRate) {
-          //set this direction as a random direction 
           float randomAngle = random(2*PI);
           directions[i] = PVector.fromAngle(randomAngle);
         }
