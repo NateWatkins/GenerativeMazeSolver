@@ -1,10 +1,10 @@
 Maze maze; 
 Population test;
-PVector goal  = new PVector(200, 5);
+PVector goal  = new PVector(280, 5);
 void setup() {
-    size(400, 400); //size of the window
+    size(300, 400); //size of the window
     frameRate(100);//speed of the dots
-    test = new Population(1000);//create a new population with 1000 members
+    test = new Population(200);//create a new population with 1000 members
     maze = new Maze();
   }
   
