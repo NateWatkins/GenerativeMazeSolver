@@ -24,7 +24,7 @@ class Dot {
       if (isBest) {
         fill(0, 255, 0);
         ellipse(pos.x, pos.y, 8, 8);
-      } else {//all other dots are just smaller black dots
+      } else {
         fill(0);
         ellipse(pos.x, pos.y, 4, 4);
       }
@@ -39,7 +39,7 @@ class Dot {
         dead = true;
       }
   
-      //apply the acceleration and move the dot
+     
       vel.add(acc);
       vel.limit(5);
       pos.add(vel);
